@@ -89,7 +89,7 @@ const Projects: React.FC = () => {
       {/* Back to Officers Button */}
       <div className="flex justify-center mt-auto mb-6">
         <Link
-          to="/Social"
+          to="/social"
           className="px-6 py-3 bg-[#bba53d] text-black rounded-lg hover:bg-[#a08c34] transition-colors"
         >
           Contact Us!

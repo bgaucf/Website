@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
               Projects
             </Link>
             <Link 
-              to="/officers" 
+              to="/social" 
               className="hover:underline px-4 py-2" 
               onClick={handleLinkClick}
               style={{ color: '#bba53d' }} // Set the text color to custom yellowish-brown
@@ -142,7 +142,7 @@ const Navbar: React.FC = () => {
         </li>
         <li>
           <Link 
-            to="/officers" 
+            to="/social" 
             className="block px-4 py-2 hover:underline" 
             onClick={handleLinkClick}
             style={{ color: '#bba53d' }} // Set the text color to custom yellowish-brown

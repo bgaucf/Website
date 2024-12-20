@@ -2,40 +2,55 @@ import React, { useEffect, useState } from "react";
 
 const Home: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0); // Track the current image
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imageVisible, setImageVisible] = useState(false); // State for image fade-in effect
 
   // Array of image paths
   const images = [
-    require("../images/gbm.png"), // Image 1
-    require("../images/Picture2.png"), // Image 2 (add additional images here)
-    require("../images/gbm copy 2.png"), // Image 3 (add additional images here)
+    require("../images/gbm.png"),
+    require("../images/Picture2.png"),
+    require("../images/gbm copy 2.png"),
   ];
 
-  // Set visibility to true after the component is mounted
   useEffect(() => {
-    const timeout = setTimeout(() => {
+    // Fade in the text on initial load
+    const textTimeout = setTimeout(() => {
       setIsVisible(true);
-    }, 100); // Delay to allow the transition to take effect
+    }, 100);
 
-    return () => clearTimeout(timeout);
+    // Fade in the initial image
+    const imageTimeout = setTimeout(() => {
+      setImageVisible(true);
+    }, 200);
+
+    return () => {
+      clearTimeout(textTimeout);
+      clearTimeout(imageTimeout);
+    };
   }, []);
 
-  // Functions to go to next or previous image
-  const goToNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length); // Wrap around when reaching end
+  // Helper function to transition images with a fade effect
+  const transitionImage = (updateIndexFn: () => number) => {
+    setImageVisible(false); // Fade out the current image
+    setTimeout(() => {
+      setCurrentImageIndex(updateIndexFn()); // Update the image index
+      setImageVisible(true); // Fade in the new image
+    }, 500); // Match this delay to the fade-out duration
   };
 
+  // Go to the next image
+  const goToNextImage = () => {
+    transitionImage(() => (currentImageIndex + 1) % images.length);
+  };
+
+  // Go to the previous image
   const goToPrevImage = () => {
-    setCurrentImageIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length // Wrap around to last image
-    );
+    transitionImage(() => (currentImageIndex - 1 + images.length) % images.length);
   };
 
   return (
     <div className="min-h-screen bg-black text-white p-8 flex items-center justify-center">
-      {/* Responsive container for text and images */}
       <div className="flex flex-col md:flex-row items-center justify-center">
-        {/* Apply fade-in effect only to the content */}
         <div
           className={`text-left max-w-4xl md:mr-6 transition-opacity duration-1000 ease-in ${
             isVisible ? "opacity-100" : "opacity-0"
@@ -77,13 +92,12 @@ const Home: React.FC = () => {
             positive, long-term change for organizations across every sector.
           </p>
 
-          {/* Join Us Button */}
           <div className="mt-8 flex flex-col items-center">
             <a
-              href="/about" // Replace with the actual URL or anchor link
+              href="/about"
               className="text-black py-3 px-8 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300"
               style={{
-                backgroundColor: "#bba53d", // Custom background color
+                backgroundColor: "#bba53d",
               }}
             >
               Join Us
@@ -91,9 +105,7 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        {/* Image Carousel */}
         <div className="relative w-96 h-96 flex items-center justify-center mt-8 md:mt-0">
-          {/* Left Arrow */}
           <button
             onClick={goToPrevImage}
             className="absolute left-0 text-4xl text-white bg-black bg-opacity-50 rounded-full p-2"
@@ -101,14 +113,14 @@ const Home: React.FC = () => {
             &#10094;
           </button>
 
-          {/* Display current image */}
           <img
             src={images[currentImageIndex]}
             alt="Black and Gold Analytics"
-            className="object-cover w-full h-full transition-opacity duration-1000 ease-in"
+            className={`object-cover w-full h-full transition-opacity duration-500 ease-in-out ${
+              imageVisible ? "opacity-100" : "opacity-0"
+            }`}
           />
 
-          {/* Right Arrow */}
           <button
             onClick={goToNextImage}
             className="absolute right-0 text-4xl text-white bg-black bg-opacity-50 rounded-full p-2"
