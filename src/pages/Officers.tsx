@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 
 // Import images for officers (replace with actual image imports)
-import johnImage from "../pages/Picture2.png"; // Example, replace with actual paths
+import johnImage from "../images/Picture2.png"; // Example, replace with actual paths
 
 interface Officer {
   name: string;
@@ -26,10 +26,10 @@ const Officers: React.FC = () => {
         linkedin: 'https://www.linkedin.com/in/abdullah-mohammed',  // Replace with actual LinkedIn URL
       },
       {
-        name: 'William Moulton',
+        name: 'Aamogh Sawant',
         role: 'Vice President',
         image: johnImage,  // Replace with actual image
-        description: 'William is a tech enthusiast aiming to become a Software Engineer for Apple. He enjoys coding, guitar, and snowboarding.',
+        description: 'William is a tech enthusiast aiming to become a Software Engineer for Apple. He enjoys coding, guitar, and chess.',
         linkedin: 'https://www.linkedin.com/in/william-moulton',  // Replace with actual LinkedIn URL
       },
       {
@@ -113,7 +113,7 @@ const Officers: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-black text-white min-h-screen p-4 flex flex-col justify-between">
+    <div className="bg-black text-[#bba53d] min-h-screen p-4 flex flex-col justify-between">
       {/* Apply fade-in with duration-1000 and ease-in to the "Our Officers" heading */}
       <h1
         className={`text-4xl font-semibold mb-6 text-center transition-opacity duration-1000 ease-in ${
@@ -176,7 +176,7 @@ const Officers: React.FC = () => {
       <div className="flex justify-center mt-auto mb-6">
         <Link
           to="/Projects"
-          className="px-6 py-3 bg-[#bba53d] text-white rounded-lg hover:bg-[#a08c34] transition-colors"
+          className="px-6 py-3 bg-[#bba53d] text-black rounded-lg hover:bg-[#a08c34] transition-colors"
         >
           Our Projects
         </Link>

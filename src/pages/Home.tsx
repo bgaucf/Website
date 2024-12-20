@@ -6,9 +6,9 @@ const Home: React.FC = () => {
 
   // Array of image paths
   const images = [
-    require("../pages/gbm.png"), // Image 1
-    require("../pages/Picture2.png"), // Image 2 (add additional images here)
-    require("../pages/gbm copy 2.png"), // Image 3 (add additional images here)
+    require("../images/gbm.png"), // Image 1
+    require("../images/Picture2.png"), // Image 2 (add additional images here)
+    require("../images/gbm copy 2.png"), // Image 3 (add additional images here)
   ];
 
   // Set visibility to true after the component is mounted

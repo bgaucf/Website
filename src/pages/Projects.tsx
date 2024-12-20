@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 
 // Importing PDF files (Replace with actual paths)
-import sportsPDF1 from "../pages/Travel Time Performance Analysis-NBA.pdf";
-import sportsPDF2 from "../pages/Travel Time Performance Analysis-NBA.pdf";
-import businessPDF1 from "../pages/Travel Time Performance Analysis-NBA.pdf";
-import businessPDF2 from "../pages/Travel Time Performance Analysis-NBA.pdf";
-import healthPDF1 from "../pages/Travel Time Performance Analysis-NBA.pdf";
-import healthPDF2 from "../pages/Travel Time Performance Analysis-NBA.pdf";
+import sportsPDF1 from "../pdfs/Travel Time Performance Analysis-NBA.pdf";
+import sportsPDF2 from "../pdfs/Travel Time Performance Analysis-NBA.pdf";
+import businessPDF1 from "../pdfs/Travel Time Performance Analysis-NBA.pdf";
+import businessPDF2 from "../pdfs/Travel Time Performance Analysis-NBA.pdf";
+import healthPDF1 from "../pdfs/Travel Time Performance Analysis-NBA.pdf";
+import healthPDF2 from "../pdfs/Travel Time Performance Analysis-NBA.pdf";
 
 const Projects: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("Sports");
@@ -29,7 +29,7 @@ const Projects: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-black text-white min-h-screen p-4 flex flex-col justify-between">
+    <div className="bg-black text-[#bba53d] min-h-screen p-4 flex flex-col justify-between">
       {/* Apply fade-in with duration-1000 and ease-in to the "Our Projects" heading */}
       <h1
         className={`text-4xl font-semibold mb-6 text-center transition-opacity duration-1000 ease-in ${
