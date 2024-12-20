@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"], /* Include DOM and ESNext features for React. */
+    "module": "esnext",
+    "jsx": "react-jsx", /* Enable React JSX syntax. */
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src"], /* Include all files in the `src` directory. */
+  "exclude": ["node_modules"] /* Exclude `node_modules` from compilation. */
+}
