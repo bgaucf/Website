@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"; // Import Link for navigation
 
 // Import images for officers (replace with actual image imports)
 import johnImage from "../images/Picture2.png"; // Example, replace with actual paths
+import nathanImage from "../images/nathan.png";
 
 interface Officer {
   name: string;
@@ -58,7 +59,7 @@ const Officers: React.FC = () => {
       {
         name: 'Nathan Wright',
         role: 'Director, Sports',
-        image: johnImage, // Replace with actual image
+        image: nathanImage, // Replace with actual image
         description: 'Nathan is passionate about sports management and dreams of working in the front office of the Jacksonville Jaguars.',
       },
       {
