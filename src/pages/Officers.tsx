@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 
 // Import images for officers (replace with actual image imports)
@@ -30,8 +30,8 @@ const Officers: React.FC = () => {
         name: 'Aamogh Sawant',
         role: 'Vice President',
         image: johnImage,  // Replace with actual image
-        description: 'William is a tech enthusiast aiming to become a Software Engineer for Apple. He enjoys coding, guitar, and chess.',
-        linkedin: 'https://www.linkedin.com/in/william-moulton',  // Replace with actual LinkedIn URL
+        description: 'Aamogh is a tech enthusiast aiming to become a Software Engineer for Apple. He enjoys coding, guitar, and chess.',
+        linkedin: 'https://www.linkedin.com/in/aamogh-sawant',  // Replace with actual LinkedIn URL
       },
       {
         name: 'Elizabeth Parks',
