@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"; // Import Link for navigation
 // Import images for officers (replace with actual image imports)
 import johnImage from "../images/Picture2.png"; // Example, replace with actual paths
 import nathanImage from "../images/nathan.png";
-import aamoghImage from "../images/aamogh.png";
+import aamoghImage from "../images/aamogh1.png";
 interface Officer {
   name: string;
   role: string;
