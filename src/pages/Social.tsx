@@ -4,12 +4,10 @@ const SocialCard: React.FC = () => {
   const handleButtonClick = (platform: string) => {
     // Replace with your platform-specific URLs
     const urls: Record<string, string> = {
-      Discord: "https://discord.com/",
-      Instagram: "https://instagram.com/",
-      Memberships: "/memberships", // Example local route
-      Linkedin: "https://linkedin.com/",
-      YouTube: "https://youtube.com/",
-      Facebook: "https://facebook.com/",
+      Discord: "https://discord.gg/qEx37V4T6q",
+      Instagram: "https://www.instagram.com/bga_ucf?igsh=MXF4dm85OXoxa3VyZg==",
+      Linkedin: "https://www.linkedin.com/company/black-and-gold-analytics",
+      Linktree: "https://linktr.ee/bga_ucf",
     };
     window.open(urls[platform], "_blank");
   };
@@ -40,7 +38,7 @@ const SocialCard: React.FC = () => {
       >
         <h2 style={{ marginBottom: "30px" }}>Student Chapter Socials</h2>
         <div style={{ display: "grid", gap: "20px" }}>
-          {["Discord", "Instagram", "24/25 Memberships", "Linkedin", "YouTube", "Facebook"].map(
+          {["Discord", "Instagram", "Linkedin", "Linktree"].map(
             (platform) => (
               <button
                 key={platform}
