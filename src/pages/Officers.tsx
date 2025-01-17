@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom"; // Import Link for navigation
 
 // Import images for officers (replace with actual image imports)
-import johnImage from "../images/Picture2.png"; // Example, replace with actual paths
+import jaydenImage from "../images/Picture2.png"; // Example, replace with actual paths
 import nathanImage from "../images/nathan.png";
 import aamoghImage from "../images/aamogh1.png";
 interface Officer {
@@ -22,7 +22,7 @@ const Officers: React.FC = () => {
       {
         name: 'Abdullah Mohammed',
         role: 'Founder & President',
-        image: johnImage,  // Replace with actual image
+        image: jaydenImage,  // Replace with actual image
         description: 'Abdullah is a passionate leader aiming to work as Assistant GM of an NBA team. He enjoys basketball, traveling, and exploring new places.',
         linkedin: 'https://www.linkedin.com/in/abdullah-mohammed',  // Replace with actual LinkedIn URL
       },
@@ -36,21 +36,21 @@ const Officers: React.FC = () => {
       {
         name: 'Elizabeth Parks',
         role: 'Secretary',
-        image: johnImage,  // Replace with actual image
+        image: jaydenImage,  // Replace with actual image
         description: 'Elizabeth is aiming to be an Actuary or Data Scientist, with a passion for volleyball and traveling.',
         linkedin: 'https://www.linkedin.com/in/elizabeth-parks',  // Replace with actual LinkedIn URL
       },
       {
         name: 'Mattias Escudero',
         role: 'Treasurer',
-        image: johnImage,  // Replace with actual image
+        image: jaydenImage,  // Replace with actual image
         description: 'Mattias aims to work in the sports/music industry as a Data Analyst, and enjoys concerts, running, and photography.',
         linkedin: 'https://www.linkedin.com/in/mattias-escudero',  // Replace with actual LinkedIn URL
       },
       {
         name: 'Nick Davidson',
         role: 'Event Coordinator',
-        image: johnImage,  // Replace with actual image
+        image: jaydenImage,  // Replace with actual image
         description: 'Nick is passionate about soccer and football and enjoys organizing events. He’s aiming to work in either soccer or football.',
         linkedin: 'https://www.linkedin.com/in/nick-davidson',  // Replace with actual LinkedIn URL
       },
@@ -65,19 +65,19 @@ const Officers: React.FC = () => {
       {
         name: 'Colin Montie',
         role: 'Workshop Coordinator, Sports',
-        image: johnImage,  // Replace with actual image
+        image: jaydenImage,  // Replace with actual image
         description: 'Colin is a Data Annotator with a love for sports and fantasy football.',
       },
       {
         name: 'Asa Arnold',
         role: 'Industry Relations Coordinator, Sports',
-        image: johnImage,  // Replace with actual image
+        image: jaydenImage,  // Replace with actual image
         description: 'Asa works in industry relations at Hertz and hosts "Analytics with Asa". He dreams of front office management or sports journalism.',
       },
       {
         name: 'Jayden Cruz Berdecia',
         role: 'Sports Liaison',
-        image: johnImage,  // Replace with actual image
+        image: jaydenImage,  // Replace with actual image
         description: 'Jayden is passionate about sports and aspires to be a General Manager.',
       },
     ],
@@ -85,21 +85,39 @@ const Officers: React.FC = () => {
       {
         name: 'Gabriel Macedo',
         role: 'Director, Business',
-        image: johnImage,  // Replace with actual image
+        image: jaydenImage,  // Replace with actual image
         description: 'Gabriel is passionate about finance and dreams of working in wealth management or financial analysis.',
       },
       {
         name: 'Alex Patel',
-        role: 'Business Liaison',
-        image: johnImage,  // Replace with actual image
+        role: 'SSO (Strategic Support Officer)',
+        image: jaydenImage,  // Replace with actual image
         description: 'Alex is pursuing a career in robotics/machine learning and enjoys tech-related hobbies.',
+      },
+     {
+        name: 'Matthew Henderson',
+        role: 'IRC (Industry Relations Coordinator)',
+        image: jaydenImage,  // Replace with actual image
+        description: 'Matthew is pursuing a career in robotics/machine learning and enjoys tech-related hobbies.',
+      },
+     {
+        name: 'Issac',
+        role: 'Business Secretary',
+        image: jaydenImage,  // Replace with actual image
+        description: 'Issac is pursuing a career in robotics/machine learning and enjoys tech-related hobbies.',
+      },
+     {
+        name: 'Aamogh Sawant',
+        role: 'Workshop Director',
+        image: jaydenImage,  // Replace with actual image
+        description: 'Aamogh is a tech enthusiast aiming to become a Software Engineer for Apple. He enjoys coding, guitar, and chess.',
       },
     ],
     Health: [
       {
         name: 'Anjali Murali',
         role: 'Director, Health',
-        image: johnImage,  // Replace with actual image
+        image: jaydenImage,  // Replace with actual image
         description: 'Anjali is a Pharm Tech with a passion for healthcare and a dream to become a physician.',
       },
     ],
