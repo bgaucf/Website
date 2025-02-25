@@ -6,9 +6,9 @@ import jaydenImage from "../images/Picture2.png"; // Example, replace with actua
 import nathanImage from "../images/nathan.png";
 import aamoghImage from "../images/aamogh1.png";
 import angliImage from "../images/angli.png";
-import gabeImage from "../image/gabe.png";
-import mattisImage from "../image/mattis.png";
-import elizImage from "../image/eliz.png";
+import gabeImage from "../images/gabe.png";
+import mattisImage from "../images/mattis.png";
+import elizImage from "../images/eliz.png";
 
 
 
