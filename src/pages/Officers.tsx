@@ -54,13 +54,6 @@ const Officers: React.FC = () => {
         description: 'Mattias aims to work in the sports/music industry as a Data Analyst, and enjoys concerts, running, and photography.',
         linkedin: 'https://www.linkedin.com/in/mattias-escudero',  // Replace with actual LinkedIn URL
       },
-      {
-        name: 'Emily',
-        role: 'Event Coordinator',
-        image: jaydenImage,  // Replace with actual image
-        description: 'Nick is passionate about soccer and football and enjoys organizing events. He’s aiming to work in either soccer or football.',
-        linkedin: 'https://www.linkedin.com/in/nick-davidson',  // Replace with actual LinkedIn URL
-      },
     ],
     Sports: [
       {
