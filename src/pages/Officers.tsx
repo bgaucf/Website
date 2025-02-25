@@ -5,6 +5,13 @@ import { Link } from "react-router-dom"; // Import Link for navigation
 import jaydenImage from "../images/Picture2.png"; // Example, replace with actual paths
 import nathanImage from "../images/nathan.png";
 import aamoghImage from "../images/aamogh1.png";
+import angliImage from "../images/angli.png";
+import gabeImage from "../image/gabe.png";
+import mattisImage from "../image/mattis.png";
+import elizImage from "../image/eliz.png";
+
+
+
 interface Officer {
   name: string;
   role: string;
@@ -36,14 +43,14 @@ const Officers: React.FC = () => {
       {
         name: 'Elizabeth Parks',
         role: 'Secretary',
-        image: jaydenImage,  // Replace with actual image
+        image: elizImage,  // Replace with actual image
         description: 'Elizabeth is aiming to be an Actuary or Data Scientist, with a passion for volleyball and traveling.',
         linkedin: 'https://www.linkedin.com/in/elizabeth-parks',  // Replace with actual LinkedIn URL
       },
       {
         name: 'Mattias Escudero',
         role: 'Treasurer',
-        image: jaydenImage,  // Replace with actual image
+        image: mattisImage,  // Replace with actual image
         description: 'Mattias aims to work in the sports/music industry as a Data Analyst, and enjoys concerts, running, and photography.',
         linkedin: 'https://www.linkedin.com/in/mattias-escudero',  // Replace with actual LinkedIn URL
       },
@@ -85,7 +92,7 @@ const Officers: React.FC = () => {
       {
         name: 'Gabriel Macedo',
         role: 'Director, Business',
-        image: jaydenImage,  // Replace with actual image
+        image: gabeImage,  // Replace with actual image
         description: 'Gabriel is passionate about finance and dreams of working in wealth management or financial analysis.',
       },
       {
@@ -117,7 +124,7 @@ const Officers: React.FC = () => {
       {
         name: 'Anjali Murali',
         role: 'Director, Health',
-        image: jaydenImage,  // Replace with actual image
+        image: angliImage,  // Replace with actual image
         description: 'Anjali is a Pharm Tech with a passion for healthcare and a dream to become a physician.',
       },
     ],
