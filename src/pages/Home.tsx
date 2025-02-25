@@ -8,8 +8,9 @@ const Home: React.FC = () => {
   // Array of image paths
   const images = [
     require("../images/gbm.png"),
-    require("../images/Picture2.png"),
-    require("../images/gbm copy 2.png"),
+    require("../images/groupBGA.png),
+    require("../images/groupBGA2.png),
+    
   ];
 
   useEffect(() => {
